@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="643.0" style="-fx-background-color: Blue;" text="Employee Manager System" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.employeemanagementsystem.HelloController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="495.0" prefWidth="598.0" style="-fx-background-color: #274ab3;">
+         <children>
+            <TextField fx:id="nameTextField" layoutX="49.0" layoutY="23.0" promptText="Employee Name" style="-fx-background-color: #82572c;" />
+            <TextField fx:id="salaryTextField" layoutX="49.0" layoutY="132.0" promptText="Salary Full-Time" style="-fx-background-color: #82572c;" />
+            <TextField fx:id="hoursWorkedTextField" layoutX="49.0" layoutY="188.0" promptText="Hourse Worked " style="-fx-background-color: #82572c;" />
+            <TextField fx:id="hourlyRateTextField" layoutX="49.0" layoutY="246.0" promptText="Hourly Rate" style="-fx-background-color: #82572c;" />
+            <TableView fx:id="employeeTable" layoutX="253.0" prefHeight="446.0" prefWidth="388.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="100.80000305175781" text="Employee Name" />
+                <TableColumn fx:id="typeColumn" prefWidth="106.39996337890625" text="Employee Type" />
+                  <TableColumn fx:id="salaryColumn" prefWidth="96.00003051757812" text="Salary" />
+                  <TableColumn fx:id="removeColumn" prefWidth="83.20001220703125" text="Remove" />
+              </columns>
+            </TableView>
+            <TextField fx:id="maxHoursTextField" layoutX="49.0" layoutY="293.0" promptText="Max Hourse" style="-fx-background-color: #82572c;" />
+            <RadioButton fx:id="fullTimeRadioButton" layoutX="49.0" layoutY="62.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="54.0" style="-fx-background-color: Black;" text="Full" textFill="WHITE" />
+            <RadioButton fx:id="contractorRadioButton" layoutX="49.0" layoutY="105.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="75.0" style="-fx-background-color: Black;" text="Contract" textFill="WHITE" />
+            <RadioButton fx:id="partTimeRadioButton" layoutX="128.0" layoutY="63.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="78.0" style="-fx-background-color: Black;" text="Part Time" textFill="WHITE" />
+            <Button fx:id="addEmployeeButton" layoutX="56.0" layoutY="350.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: Black;" text="Add Employee" textFill="WHITE" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
